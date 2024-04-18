@@ -22,7 +22,7 @@ const student2: Student = {
 const studentsList: Student[] = [student1, student2];
 
 const renderTable = ((students: Student[]) => {
-  const table = document.createElemnt('table');
+  const table = document.createElement('table');
 
   students.forEach((student) => {
     const row = table.insertRow();
@@ -34,6 +34,6 @@ const renderTable = ((students: Student[]) => {
 
   document.body.appendChild(table);
 
-};
+});
 
-rendeTable(studentsList);
+renderTable(studentsList);
